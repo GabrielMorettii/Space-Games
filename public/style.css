@@ -6,6 +6,8 @@
 }
 
 .header{
+  display: grid;
+  grid-template-rows: 60% 40%;
   background-color: #232631;
   height: 100px;
 }
@@ -50,7 +52,7 @@
 
 .avatar{
   display: grid;
-  grid-template-columns: 1fr 100px 100px;
+  grid-template-columns: 200px 100px 1fr;
   column-gap: 15px;
 }
 
@@ -87,9 +89,96 @@
   appearance:none;
 }
 
-.language select + img{
-  width: 13px;
+.language option{
+  font-weight: bold;
+}
+
+/*  Header Avatar Profile*/
+
+.profile{
+  display: grid;
+  grid-template-columns: 30px 20px;
+  justify-content: center;
+}
+
+.profile img{
+  width: 30px;
+  border-radius: 50%;
+  height: 100%;
+}
+
+.profile select{
+  background-color: #1A1E27;
+  color: white;
+  outline: none;
+}
+
+.profile option{
+  font-weight: bold;
+}
+
+/* Plataforms */
+
+.plataforms{
+  width: 60%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 15% 15% 15% 13% 15%;
+  justify-content: center;
+  color: #616970;
+  font-size: 13px;
+  gap: 10px;
+}
+
+.imgPlataform,
+.plataforms p{
+  display: inline;
+}
+
+.Nintendo img{
+  height: 22px;
+  position: relative;
+  top: -3px;
+}
+
+.plataforms p{
   position: absolute;
-  right: 10%;
-  top: 30%;
+  margin-left: 8px;
+}
+
+.All p{
+  position: inherit;
+}
+
+/* Main */
+
+.main{
+  height: 450px;
+  background: url("https://initiate.alphacoders.com/images/434/stretched-1366-768-434500.jpg?2485") center/cover;
+  display: grid;
+  justify-content: center;
+  grid-template-rows:  25% 1fr;
+  color: white;
+  filter: hue-rotate(45deg);
+}
+
+.main .mainTitle{
+  align-self: end;
+}
+
+.main .mainText{
+  text-align: center;
+}
+
+
+/* Cards */
+
+.cards{
+  height: 500px;
+  background-color: #1A1E27;
+}
+
+.card img{
+  width: 300px;
+  height: 350px;
 }
