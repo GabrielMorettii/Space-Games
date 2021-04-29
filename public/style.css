@@ -1,0 +1,95 @@
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: Arial, Helvetica, sans-serif
+}
+
+.header{
+  background-color: #232631;
+  height: 100px;
+}
+
+/* Header Img */
+
+.menu{
+  height: 60px;
+  display: grid;
+  background-color: #1A1E27;
+  grid-template-columns: 25% 1fr 30%;
+  justify-items: center;
+  align-items: center;
+  color: #fff;
+}
+
+.menu .logo img{
+  width: 250px;
+  max-height: 50px;
+  border-radius: 25%;
+}
+
+/* Header Choices */
+
+.menu ul li{
+  list-style-type: none;
+  display: inline;
+  margin-right: 20px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+/* Header Avatar Search */
+
+.menu input{
+  outline: none;
+  padding: 5px;
+  background-color: #1A1E27;
+  color: white;
+  width: 80%;
+}
+
+.avatar{
+  display: grid;
+  grid-template-columns: 1fr 100px 100px;
+  column-gap: 15px;
+}
+
+.searchField{
+  position: relative;
+  border: 1px solid #1A1E27;
+  box-shadow: 0 0 3px 1px black;
+  border-radius: 5px;
+}
+
+.searchField img{
+  position: absolute;
+  top: 15%;
+  right: 5%;
+}
+
+/* Header Avatar Language */
+
+.language{
+  display: grid;
+  grid-template-columns: 35% 1fr;
+  position: relative;
+}
+
+.language img{
+  width: 30px;
+}
+
+.language select{
+  background-color: #1A1E27;
+  color: white;
+  -moz-appearance:none;
+  -webkit-appearance:none; 
+  appearance:none;
+}
+
+.language select + img{
+  width: 13px;
+  position: absolute;
+  right: 10%;
+  top: 30%;
+}
