@@ -504,10 +504,72 @@ body{
   background-color: #2f343f;
   color: #66C617;
   transition: all 500ms ease;
-  font-size: 14px;
+  font-weight: bold;
 }
 
 
 .tracks a + p{
   text-align: end;
+}
+
+/* Footer Contacts */
+
+.footer{
+  background-color: #151925;
+  padding: 20px;
+  display: grid;
+  grid-template-rows: 1fr 15px 1fr;
+  align-items: center;
+  
+}
+
+.footer .contacts{
+  grid-template-columns: 300px 600px 300px;
+  color: var(--white-color);
+  align-items: center;
+  position: relative;
+}
+
+.logoFooter img{
+  width: 30vh;
+  height: 13vh;
+  border-radius: 5px;
+}
+
+.linksFooter ul{
+  grid-template-columns: 1fr 1fr 1fr 40%;
+}
+
+.footer li{
+  list-style-type: none;
+  font-size: 16px;
+  display: inline-block;
+}
+
+.footer li:hover{
+  color: var(--button-green);
+}
+
+.social{
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+}
+
+.social img:hover{
+  cursor: pointer;
+}
+
+
+/* Footer Credits */
+
+.credits{
+  justify-self: center;
+  color: var(--color-gray);
+  font-size: 13px;
+}
+
+.line{
+  width: 100%;
+  height: 1px;
+  background-color: var(--back-two)
 }
