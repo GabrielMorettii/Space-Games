@@ -38,10 +38,15 @@ body{
   color: #fff;
 }
 
+.logo{
+  justify-self: start;
+  margin-left: 2vw;
+}
+
 .menu .logo img{
-  width: 15vw;
+  width: 12vw;
   max-height: 50px;
-  border-radius: 25%;
+  border-radius: 3px;
 }
 
 /* Header Choices */
@@ -258,29 +263,29 @@ body{
 /* Plataform */
 
 .plataform{
-  height: 800px;
+  height: 100%;
   width: 80%;
-  margin: auto;
+  margin: 10vh auto;
 }
 
 .titleSection{
   color: white;
+  display: inline-block;
 }
 
 .underline{
   height: 3px;
-  width: 4%;
+  width: 50%;
   background-color: #66C617;
 }
 
 .cardsPlataform{
   width: 100%;
-  height: 80%;
+  height: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 6vh;
-  margin-top: 5vh;
 }
 
 .cardPlataform{
@@ -288,18 +293,22 @@ body{
   color: white;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  align-items: center;
 }
 
 .cardPlataform div + div{
   width: 60%;
   margin: 0 auto;
+  text-align: center;
 }
 
 .backgroundPlataform img{
   position: absolute;
   height: 100%;
   width: 100%;
-  opacity: 0.2
+  opacity: 0.2;
+  border-radius: 3%;
+  box-shadow: 0 0 4px 1px;
 }
 
 .imagePlataform img{
@@ -307,4 +316,126 @@ body{
   height: 30px;
 }
 
+.titlePlataform h3,
+.descriptionPlataform p,
+.seeMore a{
+  font-family: 'Poppins', sans-serif;
+}
 
+.seeMore a{
+  text-decoration: none;
+  color: #fff;
+  background-color: #66C617;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+/*  Sales */
+
+.sales{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 100%;
+  width: 80%;
+  margin: 20vh auto;
+  color: #fff;
+  gap: 20px;
+}
+
+.sales .underline{
+  margin-top: 1vh;
+  width: 40%;
+}
+
+.imageProduct img{
+  width: 50px;
+  height: 50px;
+}
+
+.product{
+  display: grid;
+  grid-template-columns: 50px 1fr 80px;
+  gap: 20px;
+  align-items: center;
+  padding: 10px;
+}
+
+.product:hover{
+  background-color: #282b33;
+}
+
+.textProduct{
+  display: grid;
+  grid-template-rows: 15px 1fr;
+  row-gap: 5px;
+}
+
+.textProduct p{
+  font-family: 'Poppins', sans-serif;
+}
+
+.offerProduct{
+  margin-top: 1vh;
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  align-items: center;
+  gap: 10px;
+}
+
+.offerProduct span{
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+}
+
+.offerProduct span:first-child{
+  background-color: #5574EC;
+  padding: 2px 5px;
+  border-radius: 3px;
+}
+
+.offerProduct span:last-child{
+  color: #616970;
+}
+
+.priceProduct p{
+  font-family: 'Poppins', sans-serif;
+  color:#66C617;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.topProducts,
+.preOrder,
+.newProducts{
+  display: grid;
+  grid-template-rows: 35px 10px 1fr 1fr 1fr 1fr;
+  row-gap: 15px;
+}
+
+/* Top Products */
+
+
+.titleTop{
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  align-items: center;
+  }
+
+.titleTop p{
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+}
+
+.topProducts .underline{
+  background: linear-gradient(to right, #ffb843 20%, transparent);
+}
+
+
+
+.preOrder .underline{
+  background: linear-gradient(to right, #E84747, transparent);
+}
+
+.newProducts .underline{
+  background: linear-gradient(to right, #2EC1E7, transparent);
+}
