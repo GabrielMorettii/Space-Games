@@ -1,22 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+:root{
+  --white-color: #fff;
+  --back-one: #1A1E27;
+  --button-green: #66C617;
+  --button-blue: #5574EC;
+  --color-gray: #616970;
+  --back-two: #232631;
+}
+
+
 *{
   margin: 0;
-  padding: 0;
+    padding: 0;
   border: 0;
-  font-family: Arial, Helvetica, sans-serif
+  font-family: 'Poppins', sans-serif;
 }
 
 body{
-  background-color: #1A1E27;
+  background-color: var(--back-one);
 }
 
-.header{
-  display: grid;
-  grid-template-rows: 60% 40%;
-  background-color: #232631;
-  height: 100px;
-}
 
 .absolute{
   position: absolute;
@@ -26,16 +30,27 @@ body{
   position: relative;
 }
 
+.grid{
+  display: grid;
+}
+
+.header{
+  display: grid;
+  grid-template-rows: 60% 40%;
+  background-color: var(--back-two);
+  height: 100px;
+}
+
 /* Header Img */
 
 .menu{
   height: 60px;
   display: grid;
-  background-color: #1A1E27;
+  background-color: var(--back-one);
   grid-template-columns: 25% 1fr 30%;
   justify-items: center;
   align-items: center;
-  color: #fff;
+  color: var(--white-color);
 }
 
 .logo{
@@ -64,8 +79,8 @@ body{
 .menu input{
   outline: none;
   padding: 5px;
-  background-color: #1A1E27;
-  color: white;
+  background-color: var(--back-one);
+  color: var(--white-color);
   width: 80%;
 }
 
@@ -77,7 +92,7 @@ body{
 
 .searchField{
   position: relative;
-  border: 1px solid #1A1E27;
+  border: 1px solid var(--back-one);
   box-shadow: 0 0 3px 1px black;
   border-radius: 5px;
 }
@@ -101,8 +116,8 @@ body{
 }
 
 .language select{
-  background-color: #1A1E27;
-  color: white;
+  background-color: var(--back-one);
+  color: var(--white-color);
   -moz-appearance:none;
   -webkit-appearance:none; 
   appearance:none;
@@ -127,8 +142,8 @@ body{
 }
 
 .profile select{
-  background-color: #1A1E27;
-  color: white;
+  background-color: var(--back-one);
+  color: var(--white-color);
   outline: none;
 }
 
@@ -144,7 +159,7 @@ body{
   display: grid;
   grid-template-columns: 15% 15% 15% 13% 15%;
   justify-content: center;
-  color: #616970;
+  color: var(--color-gray);
   font-size: 0.8rem;
   gap: 1vw;
 }
@@ -177,7 +192,7 @@ body{
   display: grid;
   justify-content: center;
   grid-template-rows:  25% 1fr;
-  color: white;
+  color: var(--white-color);
   filter: hue-rotate(45deg);
 }
 
@@ -195,7 +210,7 @@ body{
 
 .featured{
   height: 400px;
-  background-color: #1A1E27;
+  background-color: var(--back-one);
 }
 
 .cards{
@@ -231,7 +246,8 @@ body{
 }
 
 .titleOffer{
-  color: #fff;
+  color: var(--white-color);
+  text-transform: uppercase;
 }
 
 .descriptionOffer{
@@ -242,22 +258,21 @@ body{
 }
 
 .descriptionOffer a{
-  color: #fff;
+  color: var(--white-color);
   text-decoration: none;
   padding: 0.7vw;
   border-radius: 3px;
   text-transform: uppercase;
   font-size: 2vh;
   text-align: center;
-  font-family: 'Poppins', sans-serif;
 }
 
 .descriptionOffer a:first-child{
-  background-color: #5574EC;
+  background-color: var(--button-blue);
 }
 
 .descriptionOffer a:last-child{
-  background-color: #66C617;
+  background-color: var(--button-green);
 }
 
 /* Plataform */
@@ -269,14 +284,14 @@ body{
 }
 
 .titleSection{
-  color: white;
+  color: var(--white-color);
   display: inline-block;
 }
 
 .underline{
   height: 3px;
   width: 50%;
-  background-color: #66C617;
+  background-color: var(--button-green);
 }
 
 .cardsPlataform{
@@ -290,7 +305,7 @@ body{
 
 .cardPlataform{
   position: relative;
-  color: white;
+  color: var(--white-color);
   display: grid;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   align-items: center;
@@ -316,16 +331,10 @@ body{
   height: 30px;
 }
 
-.titlePlataform h3,
-.descriptionPlataform p,
-.seeMore a{
-  font-family: 'Poppins', sans-serif;
-}
-
 .seeMore a{
   text-decoration: none;
-  color: #fff;
-  background-color: #66C617;
+  color: var(--white-color);
+  background-color: var(--button-green);
   padding: 10px;
   border-radius: 3px;
 }
@@ -338,7 +347,7 @@ body{
   height: 100%;
   width: 80%;
   margin: 20vh auto;
-  color: #fff;
+  color: var(--white-color);
   gap: 20px;
 }
 
@@ -370,10 +379,6 @@ body{
   row-gap: 5px;
 }
 
-.textProduct p{
-  font-family: 'Poppins', sans-serif;
-}
-
 .offerProduct{
   margin-top: 1vh;
   display: grid;
@@ -383,23 +388,21 @@ body{
 }
 
 .offerProduct span{
-  font-family: 'Poppins', sans-serif;
   font-size: 12px;
 }
 
 .offerProduct span:first-child{
-  background-color: #5574EC;
+  background-color: var(--button-blue);
   padding: 2px 5px;
   border-radius: 3px;
 }
 
 .offerProduct span:last-child{
-  color: #616970;
+  color: var(--color-gray);
 }
 
 .priceProduct p{
-  font-family: 'Poppins', sans-serif;
-  color:#66C617;
+  color:var(--button-green);
   font-size: 18px;
   font-weight: bold;
 }
@@ -412,17 +415,16 @@ body{
   row-gap: 15px;
 }
 
-/* Top Products */
+/* Products */
 
 
 .titleTop{
   display: grid;
   grid-template-columns: 30px 1fr;
   align-items: center;
-  }
+}
 
 .titleTop p{
-  font-family: 'Poppins', sans-serif;
   text-transform: uppercase;
 }
 
@@ -430,12 +432,82 @@ body{
   background: linear-gradient(to right, #ffb843 20%, transparent);
 }
 
-
-
 .preOrder .underline{
   background: linear-gradient(to right, #E84747, transparent);
 }
 
 .newProducts .underline{
   background: linear-gradient(to right, #2EC1E7, transparent);
+}
+
+/* Categories Header */
+
+.categories .contentHeader{
+  background-color:  #171B23;
+}
+
+.categories .headerCategory{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 80%;
+  margin: 0 auto;
+  justify-items: center;
+  padding: 20px;
+}
+
+.headerCategory div{
+  grid-template-columns: 40px 1fr;
+}
+
+.headerCategory p{
+  color: var(--color-gray);
+  align-self: center;
+}
+
+/* Categories Content */
+
+.contentCategories{
+  background-color: #252A35;
+  padding: 20px 0;
+}
+
+.tracks{
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  gap: 100px;
+}
+
+.contentCategories a{
+  text-decoration: none;
+  color: #d6d3d3;
+  font-size: 13px;
+}
+
+.gameTrackOne,
+.gameTrackTwo,
+.gameTrackThree{
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  row-gap: 20px;
+}
+
+.tracks div div{
+  grid-template-columns: 1fr 1fr;
+  color: var(--color-gray);
+  font-size: 13px;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+.tracks div div:hover, .tracks div div:hover a{
+  background-color: #2f343f;
+  color: #66C617;
+  transition: all 500ms ease;
+  font-size: 14px;
+}
+
+
+.tracks a + p{
+  text-align: end;
 }
