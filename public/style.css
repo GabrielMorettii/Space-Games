@@ -21,7 +21,6 @@ body{
   background-color: var(--back-one);
 }
 
-
 .absolute{
   position: absolute;
 }
@@ -56,6 +55,7 @@ body{
 .logo{
   justify-self: start;
   margin-left: 2vw;
+  margin-top: 6px;
 }
 
 .menu .logo img{
@@ -74,6 +74,12 @@ body{
   font-weight: bold;
 }
 
+.menu ul li:hover{
+  color: var(--button-green);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
 /* Header Avatar Search */
 
 .menu input{
@@ -81,7 +87,7 @@ body{
   padding: 5px;
   background-color: var(--back-one);
   color: var(--white-color);
-  width: 80%;
+  width: 75%;
 }
 
 .avatar{
@@ -180,6 +186,12 @@ body{
   margin-left: 8px;
 }
 
+.plataforms p:hover{
+  cursor: pointer;
+  color: var(--button-green);
+  transition: 0.5s;
+}
+
 .All p{
   position: inherit;
 }
@@ -248,6 +260,7 @@ body{
 .titleOffer{
   color: var(--white-color);
   text-transform: uppercase;
+  font-size: 15px;
 }
 
 .descriptionOffer{
@@ -255,6 +268,16 @@ body{
   grid-template-columns: 1fr 1fr;
   margin-top: 2vh;
   gap: 10px;
+}
+
+.descriptionOffer a:first-child:hover{
+  box-shadow: 0 0 4px 2px var(--button-blue);
+  transition: 1s;
+}
+
+.descriptionOffer a:last-child:hover{
+  box-shadow: 0 0 4px 2px var(--button-green);
+  transition: 1s;
 }
 
 .descriptionOffer a{
@@ -268,11 +291,11 @@ body{
 }
 
 .descriptionOffer a:first-child{
-  background-color: var(--button-blue);
+  background: linear-gradient(to right,  var(--button-blue) 50%, #859bf1 100%);
 }
 
 .descriptionOffer a:last-child{
-  background-color: var(--button-green);
+  background: linear-gradient(to right,  var(--button-green) 50%, #b1f57a 100%);
 }
 
 /* Plataform */
@@ -334,9 +357,13 @@ body{
 .seeMore a{
   text-decoration: none;
   color: var(--white-color);
-  background-color: var(--button-green);
+  background: linear-gradient(to right,  var(--button-green) 50%, #78a552 100%);
   padding: 10px;
   border-radius: 3px;
+}
+
+.seeMore a:hover{
+  opacity: 0.8;
 }
 
 /*  Sales */
@@ -363,14 +390,16 @@ body{
 
 .product{
   display: grid;
-  grid-template-columns: 50px 1fr 80px;
-  gap: 20px;
+  grid-template-columns: 50px 1fr 70px;
+  gap: 10px;
   align-items: center;
   padding: 10px;
 }
 
 .product:hover{
   background-color: #282b33;
+  transition: 1s;
+  cursor: pointer;
 }
 
 .textProduct{
@@ -392,7 +421,7 @@ body{
 }
 
 .offerProduct span:first-child{
-  background-color: var(--button-blue);
+  background: linear-gradient(to right,  var(--button-blue) 50%, #859bf1 100%);
   padding: 2px 5px;
   border-radius: 3px;
 }
@@ -464,6 +493,13 @@ body{
   align-self: center;
 }
 
+.headerCategory p:hover{
+  color: var(--button-green);
+  transition: 1s;
+  cursor: pointer;
+}
+
+
 /* Categories Content */
 
 .contentCategories{
@@ -504,7 +540,6 @@ body{
   background-color: #2f343f;
   color: #66C617;
   transition: all 500ms ease;
-  font-weight: bold;
 }
 
 
@@ -548,6 +583,8 @@ body{
 
 .footer li:hover{
   color: var(--button-green);
+  cursor: pointer;
+  transition: 0.5s;
 }
 
 .social{
@@ -558,7 +595,6 @@ body{
 .social img:hover{
   cursor: pointer;
 }
-
 
 /* Footer Credits */
 
